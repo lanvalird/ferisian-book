@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# Me
+.aculaOne
+
 # dependencies
 node_modules/
 
