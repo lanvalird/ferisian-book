@@ -73,7 +73,7 @@ const dictionary: {
   {
     word: "Мiнтö",
     part_of_speech: "Глагол",
-    translate: "Прибавить / Увеличить",
+    translate: "Убавить / Уменьшить",
     status: "Актуальное",
   },
   {
@@ -252,6 +252,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Мiгала",
+    part_of_speech: "Существительное",
+    translate: "Чувство",
+    status: "Актуальное",
+  },
+  {
     word: "Пiрiвод",
     part_of_speech: "Существительное",
     translate: "Перевод",
@@ -309,6 +315,12 @@ const dictionary: {
     word: "Амнет",
     part_of_speech: "Существительное",
     translate: "Обновление",
+    status: "Актуальное",
+  },
+  {
+    word: "Грiнс",
+    part_of_speech: "Существительное",
+    translate: "Готовность",
     status: "Актуальное",
   },
   {
@@ -381,6 +393,12 @@ const dictionary: {
     word: "Надно",
     part_of_speech: "Существительное",
     translate: "День / Сегодня",
+    status: "Актуальное",
+  },
+  {
+    word: "Прост",
+    part_of_speech: "Существительное",
+    translate: "Извинение / Прощение",
     status: "Актуальное",
   },
   {
@@ -488,7 +506,7 @@ const dictionary: {
   {
     word: "Сон",
     part_of_speech: "Существительное",
-    translate: "Сон / Мечта",
+    translate: "Сон / Мечта / Мысль",
     status: "Актуальное",
   },
   {
@@ -504,6 +522,24 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Онат",
+    part_of_speech: "Предлог",
+    translate: "На",
+    status: "Актуальное",
+  },
+  {
+    word: "Iза",
+    part_of_speech: "Предлог",
+    translate: "Из-за",
+    status: "Актуальное",
+  },
+  {
+    word: "Эт",
+    part_of_speech: "Существительное",
+    translate: "Это",
+    status: "Актуальное",
+  },
+  {
     word: "Чтен",
     part_of_speech: "Существительное",
     translate: "Уста (рот, губы) / Чтение",
@@ -516,6 +552,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Плач",
+    part_of_speech: "Существительное",
+    translate: "Плач",
+    status: "Актуальное",
+  },
+  {
     word: "Янст",
     part_of_speech: "Существительное",
     translate: "Доброжелательность / Добро",
@@ -524,7 +566,7 @@ const dictionary: {
   {
     word: "Ярст",
     part_of_speech: "Существительное",
-    translate: "Злость",
+    translate: "Злость / Грубость",
     status: "Актуальное",
   },
   {
@@ -576,9 +618,27 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Сiпфß",
+    part_of_speech: "Существительное",
+    translate: "Шифр",
+    status: "Актуальное",
+  },
+  {
     word: "Па",
     part_of_speech: "Неопределённость",
     translate: "Как",
+    status: "Актуальное",
+  },
+  {
+    word: "Папе",
+    part_of_speech: "Неопределённость",
+    translate: "Пока",
+    status: "Актуальное",
+  },
+  {
+    word: "Та",
+    part_of_speech: "Неопределённость",
+    translate: "Так",
     status: "Актуальное",
   },
   {
@@ -594,9 +654,21 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Парiте",
+    part_of_speech: "Неопределённость",
+    translate: "Поэтому",
+    status: "Актуальное",
+  },
+  {
     word: "Чiт",
     part_of_speech: "Неопределённость",
     translate: "Что",
+    status: "Актуальное",
+  },
+  {
+    word: "Туть",
+    part_of_speech: "Неопределённость",
+    translate: "Тут",
     status: "Актуальное",
   },
   {
@@ -608,7 +680,7 @@ const dictionary: {
   {
     word: "Ка",
     part_of_speech: "Неопределённость",
-    translate: "Кто",
+    translate: "Кто / Кого",
     status: "Актуальное",
   },
   {
@@ -638,7 +710,7 @@ const dictionary: {
   {
     word: "Астра",
     part_of_speech: "Существительное",
-    translate: "Искра / Звезда (вещь)",
+    translate: "Искра / Звезда (небесное тело)",
     status: "Актуальное",
   },
   {
@@ -678,7 +750,19 @@ const dictionary: {
     status: "Актуальное",
   },
   {
-    word: "Oдiн",
+    word: "Двен",
+    part_of_speech: "Числительное",
+    translate: "Два",
+    status: "Актуальное",
+  },
+  {
+    word: "Три",
+    part_of_speech: "Числительное",
+    translate: "Два",
+    status: "Актуальное",
+  },
+  {
+    word: "Одiн",
     part_of_speech: "Существительное",
     translate: "Одиночка",
     status: "Актуальное",
@@ -744,6 +828,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Iгнор",
+    part_of_speech: "Существительное",
+    translate: "Игнорирование",
+    status: "Актуальное",
+  },
+  {
     word: "Геттö",
     part_of_speech: "Глагол",
     translate: "Взять / Получить",
@@ -780,6 +870,18 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Iстiн",
+    part_of_speech: "Существительное",
+    translate: "Правда / Истина",
+    status: "Актуальное",
+  },
+  {
+    word: "Уß",
+    part_of_speech: "Существительное",
+    translate: "Ухо",
+    status: "Актуальное",
+  },
+  {
     word: "Скiп",
     part_of_speech: "Существительное",
     translate: "Пропуск (что-то пропущено)",
@@ -806,7 +908,7 @@ const dictionary: {
   {
     word: "Кансел",
     part_of_speech: "Существительное",
-    translate: "Отмена / Отклон",
+    translate: "Отмена / Отклон / Отказ",
     status: "Актуальное",
   },
   {
@@ -866,7 +968,7 @@ const dictionary: {
   {
     word: "Айвэскай",
     part_of_speech: "Существительное",
-    translate: "Обозреватель",
+    translate: "Обзор / Взгляд",
     status: "Актуальное",
   },
   {
