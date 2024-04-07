@@ -25,7 +25,20 @@ export default defineConfig({
     sidebar: [
       {
         label: 'Интро',
-        link: 'intro',
+        translations: {
+          'ru': "Интро",
+          'fe': "Старт"
+        },
+        items: [
+          {
+            label: 'Интро',
+            link: 'intro',
+            translations: {
+              'ru': "Интро",
+              'fe': "Старт"
+            },
+          },
+        ]
       },
       {
         label: 'Основы',

@@ -11,6 +11,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Старт",
+    part_of_speech: "Существительное",
+    translate: "Старт / Начало",
+    status: "Актуальное",
+  },
+  {
     word: "Автор",
     part_of_speech: "Существительное",
     translate: "Автор",
@@ -83,6 +89,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Чiст",
+    part_of_speech: "Существительное",
+    translate: "Чистота",
+    status: "Актуальное",
+  },
+  {
     word: "Веросiл",
     part_of_speech: "Существительное",
     translate: "Возможность / Вероятность",
@@ -122,7 +134,7 @@ const dictionary: {
   {
     word: "Преßмэлайва",
     part_of_speech: "Существительное",
-    translate: "Признаться / Рассказать о сокровеннном",
+    translate: "Признание / Рассказать о сокровеннном",
     status: "Актуальное",
   },
   {
@@ -219,6 +231,24 @@ const dictionary: {
     word: "Дуiн",
     part_of_speech: "Существительное",
     translate: "Монета",
+    status: "Актуальное",
+  },
+  {
+    word: "Мензо",
+    part_of_speech: "Существительное",
+    translate: "Запрос",
+    status: "Актуальное",
+  },
+  {
+    word: "Нот",
+    part_of_speech: "Существительное",
+    translate: "Записка / Запись в дневнике",
+    status: "Актуальное",
+  },
+  {
+    word: "Лiстiн",
+    part_of_speech: "Существительное",
+    translate: "Записка / Справка",
     status: "Актуальное",
   },
   {
@@ -360,6 +390,54 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Ззанел",
+    part_of_speech: "Существительное",
+    translate: "Шарм",
+    status: "Актуальное",
+  },
+  {
+    word: "Пвловер",
+    part_of_speech: "Существительное",
+    translate: "Цветок",
+    status: "Актуальное",
+  },
+  {
+    word: "Янßас",
+    part_of_speech: "Существительное",
+    translate: "Цветок",
+    status: "Актуальное",
+  },
+  {
+    word: "Склеопв",
+    part_of_speech: "Существительное",
+    translate: "Подарок / Сюрприз",
+    status: "Актуальное",
+  },
+  {
+    word: "Неßэбiесмiл",
+    part_of_speech: "Существительное",
+    translate: "Брак",
+    status: "Актуальное",
+  },
+  {
+    word: "Неßэбiес",
+    part_of_speech: "Существительное",
+    translate: "Отношение (пара)",
+    status: "Актуальное",
+  },
+  {
+    word: "Себ",
+    part_of_speech: "Существительное",
+    translate: "Цепь",
+    status: "Актуальное",
+  },
+  {
+    word: "Бiес",
+    part_of_speech: "Существительное",
+    translate: "Связь",
+    status: "Актуальное",
+  },
+  {
     word: "Лайва",
     part_of_speech: "Существительное",
     translate: "Любовь",
@@ -486,6 +564,54 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Зiма",
+    part_of_speech: "Существительное",
+    translate: "Зима / Первый годовой период",
+    status: "Актуальное",
+  },
+  {
+    word: "Весна",
+    part_of_speech: "Существительное",
+    translate: "Весна / Второй годовой период",
+    status: "Актуальное",
+  },
+  {
+    word: "Лета",
+    part_of_speech: "Существительное",
+    translate: "Лето / Третий годовой период",
+    status: "Актуальное",
+  },
+  {
+    word: "Осiнь",
+    part_of_speech: "Существительное",
+    translate: "Осень / Четвёртый годовой период",
+    status: "Актуальное",
+  },
+  {
+    word: "Активнö таям",
+    part_of_speech: "Существительное",
+    translate: "Пятый годовой период",
+    status: "Актуальное",
+  },
+  {
+    word: "Сайт",
+    part_of_speech: "Существительное",
+    translate: "Веб-сайт",
+    status: "Актуальное",
+  },
+  {
+    word: "Результат",
+    part_of_speech: "Существительное",
+    translate: "Результат",
+    status: "Актуальное",
+  },
+  {
+    word: "Ярелiн",
+    part_of_speech: "Существительное",
+    translate: "Клубника",
+    status: "Актуальное",
+  },
+  {
     word: "Руßэленд",
     part_of_speech: "Существительное",
     translate: "Россия",
@@ -576,6 +702,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Яßа",
+    part_of_speech: "Существительное",
+    translate: "Малыш / Ребёнок",
+    status: "Актуальное",
+  },
+  {
     word: "Яßатеты",
     part_of_speech: "Существительное",
     translate: "Народ, Люди, Нация",
@@ -621,6 +753,54 @@ const dictionary: {
     word: "Сiпфß",
     part_of_speech: "Существительное",
     translate: "Шифр",
+    status: "Актуальное",
+  },
+  {
+    word: "Мюзiка",
+    part_of_speech: "Существительное",
+    translate: "Музыка / Звучание",
+    status: "Актуальное",
+  },
+  {
+    word: "Мюзiкмiла",
+    part_of_speech: "Существительное",
+    translate: "Песня / Композиция",
+    status: "Актуальное",
+  },
+  {
+    word: "Пвеiро",
+    part_of_speech: "Существительное",
+    translate: "Волшебство",
+    status: "Актуальное",
+  },
+  {
+    word: "Сплас",
+    part_of_speech: "Существительное",
+    translate: "Огонь",
+    status: "Актуальное",
+  },
+  {
+    word: "Спласмiл",
+    part_of_speech: "Существительное",
+    translate: "Пламя",
+    status: "Актуальное",
+  },
+  {
+    word: "Бiрд",
+    part_of_speech: "Существительное",
+    translate: "Птица",
+    status: "Актуальное",
+  },
+  {
+    word: "Бiрдомюзiк",
+    part_of_speech: "Существительное",
+    translate: "Щебетание / Красивое пение",
+    status: "Актуальное",
+  },
+  {
+    word: "Нота",
+    part_of_speech: "Существительное",
+    translate: "Нота",
     status: "Актуальное",
   },
   {
@@ -698,7 +878,7 @@ const dictionary: {
   {
     word: "Мiлене",
     part_of_speech: "Наречие",
-    translate: "Много",
+    translate: "Много / Всего / Очень",
     status: "Актуальное",
   },
   {
@@ -738,6 +918,24 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Вiселiа",
+    part_of_speech: "Существительное",
+    translate: "Радость / Веселье",
+    status: "Актуальное",
+  },
+  {
+    word: "Агнеßiа",
+    part_of_speech: "Существительное",
+    translate: "Печаль / Тоска",
+    status: "Актуальное",
+  },
+  {
+    word: "Амнестiа",
+    part_of_speech: "Существительное",
+    translate: "Разное / Неопределённое / Странное / Прибоднятое (настроение)",
+    status: "Актуальное",
+  },
+  {
     word: "Вiселе",
     part_of_speech: "Наречие",
     translate: "Весело",
@@ -756,9 +954,21 @@ const dictionary: {
     status: "Актуальное",
   },
   {
-    word: "Три",
+    word: "Трiн",
     part_of_speech: "Числительное",
-    translate: "Два",
+    translate: "Три",
+    status: "Актуальное",
+  },
+  {
+    word: "Четрн",
+    part_of_speech: "Числительное",
+    translate: "Четыре",
+    status: "Актуальное",
+  },
+  {
+    word: "Пять",
+    part_of_speech: "Числительное",
+    translate: "Пять",
     status: "Актуальное",
   },
   {
@@ -816,6 +1026,12 @@ const dictionary: {
     status: "Актуальное",
   },
   {
+    word: "Хелпмал",
+    part_of_speech: "Существительное",
+    translate: "Уточнение / Подсказка",
+    status: "Актуальное",
+  },
+  {
     word: "Пветер",
     part_of_speech: "Существительное",
     translate: "Ветер",
@@ -831,6 +1047,12 @@ const dictionary: {
     word: "Iгнор",
     part_of_speech: "Существительное",
     translate: "Игнорирование",
+    status: "Актуальное",
+  },
+  {
+    word: "Iграт",
+    part_of_speech: "Существительное",
+    translate: "Воспроизведение",
     status: "Актуальное",
   },
   {
@@ -861,6 +1083,12 @@ const dictionary: {
     word: "Моч",
     part_of_speech: "Глагол (вспомогательная часть)",
     translate: "Мочь",
+    status: "Актуальное",
+  },
+  {
+    word: "Хоч",
+    part_of_speech: "Глагол (вспомогательная часть)",
+    translate: "Хотеть",
     status: "Актуальное",
   },
   {
@@ -900,7 +1128,7 @@ const dictionary: {
     status: "Актуальное",
   },
   {
-    word: "Файнд",
+    word: "Пвайнд",
     part_of_speech: "Существительное",
     translate: "Поиск",
     status: "Актуальное",
@@ -1026,7 +1254,7 @@ const dictionary: {
     status: "Актуальное",
   },
   {
-    word: "Ситауаз",
+    word: "Сiтауаз",
     part_of_speech: "Существительное",
     translate: "Ситуация",
     status: "Актуальное",
@@ -1110,7 +1338,25 @@ export default function Dictionary({ lang }: { lang: string }) {
         </thead>
         <tbody>
           {dictionary
-            .sort((a, b) => a.word.localeCompare(b.word))
+            .sort((a, b) => {
+              const pss = [
+                "Эмотикы",
+                "Существительное",
+                "Предлог",
+                "Глагол",
+                "Глагол (вспомогательная часть)",
+                "Прилагательное",
+                "Наречие",
+                "Неопределённость",
+                "Числительное",
+              ];
+              let res =
+                pss.indexOf(a.part_of_speech) - pss.indexOf(b.part_of_speech);
+              if (res === 0) {
+                res = a.word.localeCompare(b.word);
+              }
+              return res;
+            })
             .map((word) => (
               <tr key={word.word}>
                 <td>{word.word}</td>
