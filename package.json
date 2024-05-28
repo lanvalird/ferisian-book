@@ -1,7 +1,7 @@
 {
   "name": "",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
@@ -14,7 +14,7 @@
     "@astrojs/starlight": "^0.20.1",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
-    "astro": "^4.3.5",
+    "astro": "^4.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.5",

@@ -42,13 +42,39 @@ export default defineConfig({
       },
       {
         label: 'Основы',
-        autogenerate: {
-          directory: 'basics'
-        },
+        // autogenerate: {
+        //   directory: 'basics',
+        // },
         translations: {
           'ru': "Основы",
           'fe': "Стайкы"
-        }
+        },
+        items: [{
+          label: 'Алфавит',
+          link: 'basics/alphabet',
+          translations: {
+            'ru': "Алфавит",
+            'fe': "Алпвавiт"
+          },
+          badge: { text: "~", variant: 'caution' },
+        },
+        {
+          label: 'Словарь',
+          link: 'basics/dictionary',
+          translations: {
+            'ru': "Словарь",
+            'fe': "Вордэлiст"
+          },
+          badge: { text: "+69", variant: 'success' },
+        }, {
+          label: 'Словообразование',
+          link: 'basics/word_formation',
+          translations: {
+            'ru': "Словообразование",
+            'fe': "Словоформiс"
+          },
+        },
+        ]
       },
       {
         label: 'История',
@@ -58,7 +84,8 @@ export default defineConfig({
         translations: {
           'ru': "История",
           'fe': "Сказмiл"
-        }
+        },
+        badge: { text: "Неiмы (+18)", variant: 'success' },
       }
     ]
   }), react()]
