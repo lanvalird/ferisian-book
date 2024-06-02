@@ -33,7 +33,7 @@ export default function Dictionary({ lang }: { lang: string }) {
     {
       lang: "fe",
       word: "Ворд",
-      part_of_speech: "Парт оф Яßато",
+      part_of_speech: "Парт опв Яßато",
       translate: "Пiрiвод i/iль значiт",
       gategory: "Катiка",
       status: "Статус",

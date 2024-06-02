@@ -65,13 +65,13 @@ export default defineConfig({
             'ru': "Словарь",
             'fe': "Вордэлiст"
           },
-          badge: { text: "+69", variant: 'success' },
+          badge: { text: "+77", variant: 'success' },
         }, {
           label: 'Словообразование',
           link: 'basics/word_formation',
           translations: {
             'ru': "Словообразование",
-            'fe': "Словоформiс"
+            'fe': "Словопвормiс"
           },
         },
         ]
