@@ -56,7 +56,7 @@ export default defineConfig({
             'ru': "Алфавит",
             'fe': "Алпвавiт"
           },
-          badge: { text: "~", variant: 'caution' },
+          // badge: { text: "~", variant: 'caution' },
         },
         {
           label: 'Словарь',
@@ -65,7 +65,7 @@ export default defineConfig({
             'ru': "Словарь",
             'fe': "Вордэлiст"
           },
-          badge: { text: "+77", variant: 'success' },
+          badge: { text: "+поиск", variant: 'tip' },
         }, {
           label: 'Словообразование',
           link: 'basics/word_formation',
@@ -85,7 +85,7 @@ export default defineConfig({
           'ru': "История",
           'fe': "Сказмiл"
         },
-        badge: { text: "Неiмы (+18)", variant: 'success' },
+        badge: { text: "Неiмы (+19)", variant: 'success' },
       }
     ]
   }), react()]

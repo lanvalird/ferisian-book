@@ -33,7 +33,7 @@ export default function Names({ lang }: { lang: string }) {
       origin: "Нюßiно",
       variants: "Варiанты",
       count_words: {
-        all: "Мiлене Неiмы",
+        all: "Ненißе Неiмы",
         neutral: "Нейтральны",
         male: "Мiздны",
         female: "Девны",
