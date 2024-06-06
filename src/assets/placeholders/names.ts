@@ -78,6 +78,24 @@ export const names = [
     variants: ["Настя", "Стiа", "Сiа", "Настя", "Натiа"],
   },
   {
+    name: "Максiм",
+    gender: "male",
+    origin: "(Максим)",
+    variants: ["Макс", "Сiм"],
+  },
+  {
+    name: "Зепвiр[iа]",
+    gender: "neutral",
+    origin: "Зепвiр",
+    variants: ["Зепвiря", "Зепв[iа]", "Пвiр[я]", "Пвiрiа", "Рiа", "Рiя"],
+  },
+  {
+    name: "Пваворл[iа]",
+    gender: "neutral",
+    origin: "Пвавор",
+    variants: ["Пвавор", "Лiа", "Лiя", "Пворлiя", "Рiя"],
+  },
+  {
     name: "Нiколан[а]",
     gender: "neutral",
     origin: "(Николай)",

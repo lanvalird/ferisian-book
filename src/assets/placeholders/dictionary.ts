@@ -550,6 +550,20 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
+    word: "Зепвiр",
+    part_of_speech: "Существительное",
+    gategory: "Руда",
+    translate: "Огранённый кристалл (бриллиант)",
+    status: "Актуально",
+  },
+  {
+    word: "Крiстал",
+    part_of_speech: "Существительное",
+    gategory: "Руда",
+    translate: "Кристалл",
+    status: "Актуально",
+  },
+  {
     word: "Банiтэленд",
     part_of_speech: "Существительное",
     gategory: "Государства",
@@ -1059,7 +1073,7 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Словопвормiс",
+    word: "Вордэпвормiс",
     part_of_speech: "Существительное",
     translate: "Словообразование",
     status: "Актуально",

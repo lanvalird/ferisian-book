@@ -71,7 +71,7 @@ export default defineConfig({
           link: 'basics/word_formation',
           translations: {
             'ru': "Словообразование",
-            'fe': "Словопвормiс"
+            'fe': "Вордэпвормiс"
           },
         },
         ]
@@ -85,7 +85,7 @@ export default defineConfig({
           'ru': "История",
           'fe': "Сказмiл"
         },
-        badge: { text: "Неiмы (+19)", variant: 'success' },
+        badge: { text: "Неiмы (+3)", variant: 'success' },
       }
     ]
   }), react()]

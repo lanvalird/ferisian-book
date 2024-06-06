@@ -57,8 +57,10 @@ export default function Dictionary({ lang }: { lang: string }) {
     const replaceSymbols = (s: string) => {
       const rs: { symbol: string; replace: string }[] = [
         { symbol: "ß", replace: "сс" },
+        { symbol: "ш", replace: "сс" },
         { symbol: "ф", replace: "пв" },
         { symbol: "и", replace: "i" },
+        { symbol: "ж", replace: "зз" },
       ];
 
       rs.forEach((rs) => (s = s.replaceAll(rs.symbol, rs.replace)));
