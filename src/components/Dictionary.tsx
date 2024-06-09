@@ -1,25 +1,5 @@
 import { useState } from "react";
-import { dictionary } from "../assets/placeholders/dictionary";
-
-export interface IWord {
-  word: string;
-  part_of_speech:
-    | "Эмотикы"
-    | "Местоимение"
-    | "Существительное"
-    | "Предлог"
-    | "Глагол"
-    | "Глагол (вспомогательная часть)"
-    | "Прилагательное"
-    | "Наречие"
-    | "Неопределённость"
-    | "Числительное";
-  variants?: IWord[];
-  gategory?: string;
-  sort?: number;
-  translate: string;
-  status: "Актуально" | "Винтаж" | "Не актуально";
-}
+import { dictionary, type IWord } from "../assets/placeholders/dictionary";
 
 export default function Dictionary({ lang }: { lang: string }) {
   if (!lang) lang = "ru";
@@ -71,30 +51,44 @@ export default function Dictionary({ lang }: { lang: string }) {
     switch (findFilters.filter) {
       case "word":
         setDictionaryFiltered(
-          dictionary.filter((w) =>
-            replaceSymbols(w.word.toLocaleLowerCase()).includes(
-              replaceSymbols(v)
-            )
+          dictionary.filter(
+            (w) =>
+              replaceSymbols(w.word.toLocaleLowerCase()).includes(
+                replaceSymbols(v)
+              ) ||
+              w.variants?.some((vw) =>
+                replaceSymbols(vw.word.toLocaleLowerCase()).includes(v)
+              )
           )
         );
         break;
 
       case "translate":
         setDictionaryFiltered(
-          dictionary.filter((w) =>
-            replaceSymbols(w.translate.toLocaleLowerCase()).includes(
-              replaceSymbols(v)
-            )
+          dictionary.filter(
+            (w) =>
+              replaceSymbols(w.translate.toLocaleLowerCase()).includes(
+                replaceSymbols(v)
+              ) ||
+              w.variants?.some((vw) =>
+                replaceSymbols(vw.translate.toLocaleLowerCase()).includes(v)
+              )
           )
         );
         break;
 
       case "gategory":
         setDictionaryFiltered(
-          dictionary.filter((w) =>
-            replaceSymbols(w.gategory?.toLocaleLowerCase() ?? "").includes(
-              replaceSymbols(v)
-            )
+          dictionary.filter(
+            (w) =>
+              replaceSymbols(w.gategory?.toLocaleLowerCase() ?? "").includes(
+                replaceSymbols(v)
+              ) ||
+              w.variants?.some((vw) =>
+                replaceSymbols(vw.gategory?.toLocaleLowerCase() ?? "").includes(
+                  v
+                )
+              )
           )
         );
         break;
@@ -156,6 +150,10 @@ export default function Dictionary({ lang }: { lang: string }) {
           </option>
         </select>
       </form>
+      <p>
+        {translate.find((el) => el.lang === lang)?.count_words}:{" "}
+        {dictionaryFiltered.length} / *{dictionary.length}
+      </p>
       <table>
         <thead>
           <tr>
@@ -171,9 +169,9 @@ export default function Dictionary({ lang }: { lang: string }) {
             <th scope="col">
               {translate.find((el) => el.lang === lang)?.translate}
             </th>
-            {/* <th scope="col">
+            <th scope="col">
               {translate.find((el) => el.lang === lang)?.variants}
-            </th> */}
+            </th>
             <th scope="col">
               {translate.find((el) => el.lang === lang)?.status}
             </th>
@@ -216,21 +214,87 @@ export default function Dictionary({ lang }: { lang: string }) {
               return a.gategory.localeCompare(b.gategory);
             })
             .map((word) => (
-              <tr key={word.word}>
-                <td>{word.word}</td>
-                <td>{word.gategory ?? ""}</td>
-                <td>{word.part_of_speech}</td>
-                <td>{word.translate}</td>
-                {/* <td>{word.variants?.map((v) => v.word) ?? ""}</td> */}
-                <td>{word.status}</td>
-              </tr>
+              <RowTable key={word.word} word={word} />
             ))}
         </tbody>
       </table>
       <p>
         {translate.find((el) => el.lang === lang)?.count_words}:{" "}
-        {dictionaryFiltered.length} / {dictionary.length}
+        {dictionaryFiltered.length} / *{dictionary.length}
       </p>
+    </>
+  );
+}
+
+function RowTable({ word }: { word: IWord }) {
+  const [visibleChild, setVisibleChild] = useState(false);
+
+  const Head = () => (
+    <tr>
+      <td
+        colSpan={6}
+        style={{
+          backgroundColor: "var(--sl-color-accent-low)",
+        }}
+      >
+        <button
+          onClick={() => setVisibleChild(!visibleChild)}
+          style={{
+            width: "100%",
+            height: "100%",
+            paddingInlineStart: "0.5rem",
+            paddingInlineEnd: "0.5rem",
+            backgroundColor: "rgba(255,255,255,0)",
+            border: "none",
+            color: "var(--sl-color-bg-accent)",
+            textAlign: "left",
+          }}
+        >
+          <strong>{word.word}</strong> – {(word.variants?.length || 0) + 1}
+        </button>
+      </td>
+    </tr>
+  );
+
+  return (
+    <>
+      {visibleChild && <Head />}
+      <tr
+        style={{
+          backgroundColor: "var(--sl-color-bg)",
+        }}
+      >
+        <td>{word.word}</td>
+        <td>{word.gategory ?? ""}</td>
+        <td>{word.part_of_speech}</td>
+        <td>{word.translate}</td>
+        <td style={{ padding: "0" }}>
+          {(word.variants?.length || 0) !== 0 && (
+            <button
+              onClick={() => setVisibleChild(!visibleChild)}
+              style={{
+                width: "100%",
+                height: "100%",
+                paddingInlineStart: "0.5rem",
+                paddingInlineEnd: "0.5rem",
+                backgroundColor: "rgba(255,255,255,0)",
+                border: "none",
+              }}
+            >
+              {!visibleChild && "+" + word.variants?.length}
+            </button>
+          )}
+        </td>
+        <td>{word.status}</td>
+      </tr>
+      {visibleChild && (
+        <>
+          {word.variants?.map((word) => (
+            <RowTable key={word.word} word={word} />
+          ))}
+          <Head />
+        </>
+      )}
     </>
   );
 }
