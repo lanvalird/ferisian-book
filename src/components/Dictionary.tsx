@@ -259,11 +259,7 @@ function RowTable({ word }: { word: IWord }) {
   return (
     <>
       {visibleChild && <Head />}
-      <tr
-        style={{
-          backgroundColor: "var(--sl-color-bg)",
-        }}
-      >
+      <tr>
         <td>{word.word}</td>
         <td>{word.gategory ?? ""}</td>
         <td>{word.part_of_speech}</td>
