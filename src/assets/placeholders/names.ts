@@ -1,4 +1,11 @@
-export const names = [
+export interface IName {
+  name: string;
+  gender: "male" | "female" | "neutral";
+  origin: string;
+  variants: string[];
+}
+
+export const names: IName[] = [
   {
     name: "Асеул[iа]",
     gender: "neutral",
@@ -12,10 +19,10 @@ export const names = [
     variants: ["Мiлана", "Мiлена", "Мiля", "Мiлiа", "Iлен"],
   },
   {
-    name: "Лайнтер",
+    name: "Лайнпветер",
     gender: "male",
-    origin: "Лайна + Фетер",
-    variants: ["Лайнфето", "Лайнфетер"],
+    origin: "Лайна + Пветер",
+    variants: ["Лайнпвето", "Лайнтер"],
   },
   {
     name: "Скаярст",
@@ -27,13 +34,45 @@ export const names = [
     name: "Скайо",
     gender: "male",
     origin: "Скайо",
-    variants: ["Скай", "Айё"],
+    variants: ["Скай", "Аiйо"],
   },
   {
     name: "Мiголia",
     gender: "female",
     origin: "Амiгорiа / (Ангелина)",
     variants: ["Мiга", "Голiа", "Лiа", "Мiлiа", "Мiля"],
+  },
+  {
+    name: "Вiселia",
+    gender: "female",
+    origin: "Вiсела",
+    variants: [
+      "Вiла",
+      "Вiлiа",
+      "Лiа",
+      "Сiлiа",
+      "Вiля",
+      "Сiля",
+      "Селiа",
+      "Вiся",
+    ],
+  },
+  {
+    name: "Вiголia",
+    gender: "female",
+    origin: "(Виселия) / (Миголия)",
+    variants: [
+      "Вiла",
+      "Вiлiа",
+      "Лiа",
+      "Гiлiа",
+      "Голiа",
+      "Вiля",
+      "Гiля",
+      "Геля",
+      "Велiа",
+      "Вiся",
+    ],
   },
   {
     name: "Калiн[а]",
@@ -72,10 +111,10 @@ export const names = [
     variants: ["Вiс", "Ел", "Ель", "Вiсi", "Iсi"],
   },
   {
-    name: "Настiа",
+    name: "Анастасiа",
     gender: "female",
     origin: "(Анастасия)",
-    variants: ["Настя", "Стiа", "Сiа", "Настя", "Натiа"],
+    variants: ["Настiа", "Настя", "Стiа", "Сiа", "Настя", "Натiа"],
   },
   {
     name: "Максiм",
@@ -132,6 +171,18 @@ export const names = [
     variants: ["Край", "Крей", "Раiр"],
   },
   {
+    name: "Евелiн[а]",
+    gender: "neutral",
+    origin: "",
+    variants: ["Ева", "Лiн[а]", "Евiн[а]"],
+  },
+  {
+    name: "Iнiлин",
+    gender: "male",
+    origin: "",
+    variants: ["Ini", "Лiн", "Iнiл"],
+  },
+  {
     name: "Веснia",
     gender: "female",
     origin: "Весна",
@@ -178,10 +229,10 @@ export const names = [
     variants: ["Нью", "Берд", "Нюбiрд", "Тiа", "Нюбертя", "Нютя", "Нютiа"],
   },
   {
-    name: "Мiлiфер",
+    name: "Мiлiпвер",
     gender: "male",
     origin: "",
-    variants: ["Мiл", "Мiлiф", "Милiф", "Милiфер", "Лiфер"],
+    variants: ["Мiл", "Мiлiпв", "Мiлiпвер", "Лiпвер"],
   },
   {
     name: "Валентiн[а]",
@@ -265,6 +316,21 @@ export const names = [
     gender: "female",
     origin: "Бiреза",
     variants: ["Бiр[iа]", "Зiя", "Резiа", "Резя", "Рiз", "Бiрзiя"],
+  },
+  {
+    name: "Нiол[iа]",
+    gender: "female",
+    origin: "",
+    variants: [
+      "Нiл[iа]",
+      "Нiя",
+      "Нiля",
+      "Оля",
+      "Олiя",
+      "Ниол[а]",
+      "Олiа",
+      "Iлiа",
+    ],
   },
   {
     name: "Пвiалiа",

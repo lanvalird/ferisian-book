@@ -85,7 +85,7 @@ export default defineConfig({
           'ru': "История",
           'fe': "Сказмiл"
         },
-        badge: { text: "Неiмы (+3)", variant: 'success' },
+        badge: { text: "Неiмы (+8)", variant: 'success' },
       }
     ]
   }), react()]
