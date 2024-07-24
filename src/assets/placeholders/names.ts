@@ -7,6 +7,12 @@ export interface IName {
 
 export const names: IName[] = [
   {
+    name: "Алiсiа",
+    gender: "female",
+    origin: "(Алиса)",
+    variants: ["Алiса", "Алia", "Аля", "Ciя", "Лiсiа", "Алiс", "Елiс"],
+  },
+  {
     name: "Асеул[iа]",
     gender: "neutral",
     origin: "Аса + Ула",
@@ -43,8 +49,8 @@ export const names: IName[] = [
     variants: ["Мiга", "Голiа", "Лiа", "Мiлiа", "Мiля"],
   },
   {
-    name: "Вiселia",
-    gender: "female",
+    name: "Вiсел[ia]",
+    gender: "neutral",
     origin: "Вiсела",
     variants: [
       "Вiла",
@@ -55,6 +61,11 @@ export const names: IName[] = [
       "Сiля",
       "Селiа",
       "Вiся",
+      "Вiс",
+      "Ел",
+      "Ель",
+      "Вiсi",
+      "Iсi",
     ],
   },
   {
@@ -105,12 +116,6 @@ export const names: IName[] = [
     variants: ["Ейд"],
   },
   {
-    name: "Вiсел[а]",
-    gender: "neutral",
-    origin: "Вiселе",
-    variants: ["Вiс", "Ел", "Ель", "Вiсi", "Iсi"],
-  },
-  {
     name: "Анастасiа",
     gender: "female",
     origin: "(Анастасия)",
@@ -121,6 +126,12 @@ export const names: IName[] = [
     gender: "male",
     origin: "(Максим)",
     variants: ["Макс", "Сiм"],
+  },
+  {
+    name: "Лесiан",
+    gender: "male",
+    origin: "(лес)",
+    variants: ["Лес", "Лесiн", "Сiн", "Сiан", "Сан"],
   },
   {
     name: "Зепвiр[iа]",

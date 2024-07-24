@@ -189,7 +189,6 @@ export default function Names({ lang }: { lang: string }) {
                   >
                     <td
                       colSpan={4}
-                      key={arr[i].name}
                       style={{
                         color: "var(--sl-color-gray-3)",
                         fontWeight: "bold",

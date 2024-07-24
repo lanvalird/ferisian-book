@@ -92,6 +92,14 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     translate: "Старт / Начало",
     status: "Актуально",
+    variants: [
+      {
+        word: "Старттö",
+        part_of_speech: "Глагол",
+        translate: "Стартует / Начинает",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Пвлора",
@@ -169,10 +177,76 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Вход",
+    word: "Ход",
     part_of_speech: "Существительное",
-    translate: "Вход",
+    translate: "Ход (партия) / Шаг",
     status: "Актуально",
+    variants: [
+      {
+        word: "Вiход",
+        part_of_speech: "Существительное",
+        translate: "Вход",
+        status: "Актуально",
+      },
+      {
+        word: "Девiход",
+        part_of_speech: "Существительное",
+        translate: "Выход",
+        status: "Актуально",
+      },
+      {
+        word: "Десход",
+        part_of_speech: "Существительное",
+        translate: "Шаг назад / Возвращение",
+        status: "Актуально",
+      },
+    ],
+  },
+  {
+    word: "Порт",
+    part_of_speech: "Существительное",
+    translate: "Порт (корабельный) / Стык (подключение)",
+    status: "Актуально",
+    variants: [
+      {
+        word: "Вiпорт",
+        part_of_speech: "Существительное",
+        translate: "Импорт",
+        status: "Актуально",
+      },
+      {
+        word: "Девiпорт",
+        part_of_speech: "Существительное",
+        translate: "Экспорт",
+        status: "Актуально",
+      },
+    ],
+  },
+  {
+    word: "Тiлаген",
+    part_of_speech: "Существительное",
+    translate: "Соединение / Подключение",
+    status: "Актуально",
+    variants: [
+      {
+        word: "Вiтилаген",
+        part_of_speech: "Существительное",
+        translate: "Подключение (сопряжённое)",
+        status: "Актуально",
+      },
+      {
+        word: "Девiтилаген",
+        part_of_speech: "Существительное",
+        translate: "Отключение (отсоединение)",
+        status: "Актуально",
+      },
+      {
+        word: "Дестилаген",
+        part_of_speech: "Существительное",
+        translate: "Отключение (разрыв)",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Жмят",
@@ -394,18 +468,16 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
+    word: "Ньiт",
+    part_of_speech: "Существительное",
+    translate: "Нота",
+    status: "Актуально",
+  },
+  {
     word: "Нот",
     part_of_speech: "Существительное",
     translate: "Записка / Запись в дневнике",
     status: "Актуально",
-    variants: [
-      {
-        word: "Нота",
-        part_of_speech: "Существительное",
-        translate: "Нота",
-        status: "Актуально",
-      },
-    ],
   },
   {
     word: "Лiстiн",
@@ -432,6 +504,24 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
+    word: "Сентес",
+    part_of_speech: "Существительное",
+    translate: "Предложение (грамматика)",
+    status: "Актуально",
+  },
+  {
+    word: "Сiнтез",
+    part_of_speech: "Существительное",
+    translate: "Синтез / Объединение / Слияние",
+    status: "Актуально",
+  },
+  {
+    word: "Сентесопвормiс",
+    part_of_speech: "Существительное",
+    translate: "Составление предложений",
+    status: "Актуально",
+  },
+  {
     word: "Статус",
     part_of_speech: "Существительное",
     translate: "Статус",
@@ -442,17 +532,19 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     translate: "Значение",
     status: "Актуально",
+    variants: [
+      {
+        word: "Десозначiт",
+        part_of_speech: "Существительное",
+        translate: "Противоположное значение",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Сiберiß",
     part_of_speech: "Существительное",
     translate: "Вопрос",
-    status: "Актуально",
-  },
-  {
-    word: "Протiвозначiт",
-    part_of_speech: "Существительное",
-    translate: "Противоположное значение",
     status: "Актуально",
   },
   {
@@ -507,13 +599,33 @@ export const dictionary: IWord[] = [
     part_of_speech: "Эмотикы",
     gategory: "Эмотикы",
     translate: "Пока",
-    status: "Актуально",
+    status: "Не актуально",
   },
   {
     word: "Хейле",
     part_of_speech: "Эмотикы",
     gategory: "Эмотикы",
     translate: "Привет",
+    status: "Актуально",
+  },
+  {
+    word: "Пфансе",
+    part_of_speech: "Эмотикы",
+    gategory: "Эмотикы",
+    translate: "Пока / До свидания",
+    status: "Актуально",
+  },
+  {
+    word: "Жане",
+    part_of_speech: "Эмотикы",
+    gategory: "Эмотикы",
+    translate: "Здравствуйте",
+    status: "Актуально",
+  },
+  {
+    word: "Жанр",
+    part_of_speech: "Существительное",
+    translate: "Жанр / Тематика",
     status: "Актуально",
   },
   {
@@ -563,6 +675,14 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     translate: "Новинка / Открытие (чего-то нового)",
     status: "Актуально",
+    variants: [
+      {
+        word: "Ньютö",
+        part_of_speech: "Существительное",
+        translate: "Открывать что-то новое (исследование)",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Ссвода",
@@ -594,6 +714,14 @@ export const dictionary: IWord[] = [
     gategory: "Руда",
     translate: "Банит",
     status: "Актуально",
+    variants: [
+      {
+        word: "Банiтнö",
+        part_of_speech: "Прилагательное",
+        translate: "Банитовый",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Зепвiр",
@@ -984,11 +1112,26 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Iнвайт",
+    word: "Вайт",
     part_of_speech: "Существительное",
-    translate: "Приглашение",
+    translate: "Посещение",
     status: "Актуально",
+    variants: [
+      {
+        word: "Вiвайт",
+        part_of_speech: "Существительное",
+        translate: "Посещение (гостевое)",
+        status: "Актуально",
+      },
+      {
+        word: "Iнвайт",
+        part_of_speech: "Существительное",
+        translate: "Приглашение",
+        status: "Актуально",
+      },
+    ],
   },
+
   {
     word: "Мiст",
     part_of_speech: "Существительное",
@@ -1082,6 +1225,14 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     translate: "Уста (рот, губы) / Чтение",
     status: "Актуально",
+    variants: [
+      {
+        word: "Чтентö",
+        part_of_speech: "Глагол",
+        translate: "Читать",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Этен",
@@ -1144,6 +1295,20 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     gategory: "Социум",
     translate: "Друг",
+    status: "Актуально",
+  },
+  {
+    word: "Яßатетосебомонато",
+    part_of_speech: "Существительное",
+    gategory: "Социум",
+    translate: "Дружба",
+    status: "Не актуально",
+  },
+  {
+    word: "Друззба",
+    part_of_speech: "Существительное",
+    gategory: "Социум",
+    translate: "Дружба",
     status: "Актуально",
   },
   {
@@ -1262,6 +1427,18 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
+    word: "Корзiн",
+    part_of_speech: "Существительное",
+    translate: "Корзина / Ведро",
+    status: "Актуально",
+  },
+  {
+    word: "Мусор",
+    part_of_speech: "Существительное",
+    translate: "Мусор / Отходы",
+    status: "Актуально",
+  },
+  {
     word: "Монат",
     part_of_speech: "Существительное",
     translate: "Дорога / Путь / План (инструкция)",
@@ -1280,9 +1457,9 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Банiтнö",
-    part_of_speech: "Прилагательное",
-    translate: "Банитовый",
+    word: "Евент",
+    part_of_speech: "Существительное",
+    translate: "Мероприятие / Событие",
     status: "Актуально",
   },
   {
@@ -1320,7 +1497,7 @@ export const dictionary: IWord[] = [
   {
     word: "Пвеiро",
     part_of_speech: "Существительное",
-    translate: "Волшебство",
+    translate: "Волшебство / Магия",
     status: "Актуально",
   },
   {
@@ -1436,17 +1613,20 @@ export const dictionary: IWord[] = [
     translate: "Всего / Очень / Сильно",
     status: "Винтаж",
   },
-  {
-    word: "Мiленоастре",
-    part_of_speech: "Наречие",
-    translate: "Преочень / Пресильно",
-    status: "Актуально",
-  },
+
   {
     word: "Мiленоастра",
     part_of_speech: "Существительное",
     translate: "Совершенствование / Продвижение / Стремление (упорство)",
     status: "Актуально",
+    variants: [
+      {
+        word: "Мiленоастре",
+        part_of_speech: "Наречие",
+        translate: "Преочень / Пресильно",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Ненißе",
@@ -1540,6 +1720,15 @@ export const dictionary: IWord[] = [
     gategory: "Чувства и эмоции",
     translate: "Разное / Неопределённое / Странное / Прибоднятое (настроение)",
     status: "Актуально",
+    variants: [
+      {
+        word: "Амнестiтö",
+        part_of_speech: "Существительное",
+        translate:
+          "Теряться в чувствах (в положительном тоне) / Чувствовать странное прибоднятое настроение",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Зер",
@@ -1731,7 +1920,7 @@ export const dictionary: IWord[] = [
     status: "Актуально",
     variants: [
       {
-        word: "Картiнмiл",
+        word: "Картiнмал",
         part_of_speech: "Существительное",
         translate: "Картинка / Миниатюра",
         status: "Актуально",
@@ -2046,7 +2235,7 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Ваiлiс",
+    word: "Ваiльс",
     part_of_speech: "Существительное",
     translate: "Вальс",
     status: "Актуально",
@@ -2205,6 +2394,43 @@ export const dictionary: IWord[] = [
     part_of_speech: "Существительное",
     translate: "Проба / Попытка",
     status: "Актуально",
+  },
+  {
+    word: "Рiпвiт",
+    part_of_speech: "Существительное",
+    translate: "Повтор / Повторение / Цикл",
+    status: "Актуально",
+    variants: [
+      {
+        word: "Рiпвiте",
+        part_of_speech: "Наречие",
+        translate: "Вновь / Снова / По-новой",
+        status: "Актуально",
+      },
+    ],
+  },
+  {
+    word: "Прав",
+    part_of_speech: "Существительное",
+    translate: "Занятость (делом) / Действие (трудовая активность)",
+    status: "Актуально",
+    variants: [
+      {
+        word: "Правтü",
+        part_of_speech: "Глагол",
+        translate:
+          "Совершать что-то / Делать что-то / Быть занятым / Работать (не карьера)",
+        status: "Актуально",
+        variants: [
+          {
+            word: "Реправтö",
+            part_of_speech: "Существительное",
+            translate: "Переделывать / Перерабатывать / Переживать",
+            status: "Актуально",
+          },
+        ],
+      },
+    ],
   },
   {
     word: "Нюньк",

@@ -9,7 +9,7 @@ export default defineConfig({
     title: 'Ferisian Book',
     customCss: ["./src/styles/main.css"],
     social: {
-      // github: 'https://github.com/withastro/starlight',
+      // github: 'https://github.com/aculaOne/ferisian_book',
     },
     defaultLocale: 'ru',
     locales: {
@@ -56,7 +56,6 @@ export default defineConfig({
             'ru': "Алфавит",
             'fe': "Алпвавiт"
           },
-          // badge: { text: "~", variant: 'caution' },
         },
         {
           label: 'Словарь',
@@ -65,7 +64,7 @@ export default defineConfig({
             'ru': "Словарь",
             'fe': "Вордэлiст"
           },
-          badge: { text: "+поиск", variant: 'tip' },
+          badge: { text: "~", variant: 'caution' },
         }, {
           label: 'Словообразование',
           link: 'basics/word_formation',
@@ -73,6 +72,15 @@ export default defineConfig({
             'ru': "Словообразование",
             'fe': "Вордэпвормiс"
           },
+        },
+        {
+          label: "Образование предложений",
+          link: "basics/sentence_formation",
+          translations: {
+            'ru': "Образование предложений",
+            'fe': "Сентесопвормiс"
+          },
+          badge: { text: "новое", variant: "success" }
         },
         ]
       },
@@ -85,7 +93,7 @@ export default defineConfig({
           'ru': "История",
           'fe': "Сказмiл"
         },
-        badge: { text: "Неiмы (+8)", variant: 'success' },
+        badge: { text: "(+)", variant: 'success' },
       }
     ]
   }), react()]

@@ -12,7 +12,7 @@ export default function Dictionary({ lang }: { lang: string }) {
       gategory: "Категория",
       variants: "Вариации",
       status: "Статус",
-      count_words: "Всего слов",
+      count_words: "Всего базовых слов",
     },
     {
       lang: "fe",
@@ -22,7 +22,7 @@ export default function Dictionary({ lang }: { lang: string }) {
       gategory: "Катiка",
       variants: "Варiанты",
       status: "Статус",
-      count_words: "Ненißе Ворды",
+      count_words: "Ненißе стайкны Ворды",
     },
   ];
   const [dictionaryFiltered, setDictionaryFiltered] = useState<IWord[] | []>(
