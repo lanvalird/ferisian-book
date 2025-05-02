@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
+import starlightBlog from 'starlight-blog'
 import react from "@astrojs/react";
 
 // https://astro.build/config
@@ -95,6 +95,10 @@ export default defineConfig({
         },
         badge: { text: "(+)", variant: 'success' },
       }
-    ]
+    ],
+
+    plugins: [starlightBlog({
+      title: 'Блог',
+    })],
   }), react()]
 });

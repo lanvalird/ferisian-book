@@ -152,7 +152,8 @@ export default function Dictionary({ lang }: { lang: string }) {
       </form>
       <p>
         {translate.find((el) => el.lang === lang)?.count_words}:{" "}
-        {dictionaryFiltered.length} / *{dictionary.length}
+        {dictionaryFiltered.length} /{" "}
+        {dictionary.flatMap((w) => w.variants).length}
       </p>
       <table>
         <thead>
@@ -220,7 +221,8 @@ export default function Dictionary({ lang }: { lang: string }) {
       </table>
       <p>
         {translate.find((el) => el.lang === lang)?.count_words}:{" "}
-        {dictionaryFiltered.length} / *{dictionary.length}
+        {dictionaryFiltered.length} /
+        {dictionary.flatMap((w) => w.variants).length}
       </p>
     </>
   );

@@ -18,6 +18,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.5",
+    "starlight-blog": "^0.11.1",
     "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@10.6.0+sha256.71ea235e611e2c8e6043ffca1c278f82089f71dfec4d1e9d01b47825e5e92f89",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

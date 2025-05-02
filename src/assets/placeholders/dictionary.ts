@@ -249,10 +249,24 @@ export const dictionary: IWord[] = [
     ],
   },
   {
-    word: "Жмят",
+    word: "Ззмят",
     part_of_speech: "Существительное",
     translate: "Клик / Нажатие",
     status: "Актуально",
+  },
+  {
+    word: "Асейтö",
+    part_of_speech: "Глагол",
+    translate: "Отстань / Отвали / Отвянь",
+    status: "Актуально",
+variants: [
+      {
+        word: "Асайтö",
+        part_of_speech: "Глагол",
+        translate: "Отвянь",
+        status: "Актуально",
+      },
+    ],
   },
   {
     word: "Бiтö",
@@ -616,14 +630,14 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Жане",
+    word: "Ззане",
     part_of_speech: "Эмотикы",
     gategory: "Эмотикы",
     translate: "Здравствуйте",
     status: "Актуально",
   },
   {
-    word: "Жанр",
+    word: "Ззанр",
     part_of_speech: "Существительное",
     translate: "Жанр / Тематика",
     status: "Актуально",
@@ -1171,7 +1185,7 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Цiкл",
+    word: "Тсiкл",
     part_of_speech: "Существительное",
     translate: "Цикл",
     status: "Актуально",
@@ -1635,7 +1649,7 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
-    word: "Гинто",
+    word: "Гiнто",
     part_of_speech: "Существительное",
     translate: "Другое / Иное / Неподходящее / Вариантное что-то",
     status: "Актуально",
@@ -1908,6 +1922,18 @@ export const dictionary: IWord[] = [
     status: "Актуально",
   },
   {
+    word: "Панела",
+    part_of_speech: "Существительное",
+    translate: "Панель (перегородка)",
+    status: "Актуально",
+  },
+  {
+    word: "Пвеiнiп",
+    part_of_speech: "Существительное",
+    translate: "Панель (поднос)",
+    status: "Актуально",
+  },
+  {
     word: "Лiтс",
     part_of_speech: "Существительное",
     translate: "Лицо",
@@ -2041,7 +2067,13 @@ export const dictionary: IWord[] = [
   {
     word: "Модерiнгтö",
     part_of_speech: "Глагол",
-    translate: "Администрирование / Управление",
+    translate: "Администрировать / Управлять",
+    status: "Актуально",
+  },
+  {
+    word: "Контрол",
+    part_of_speech: "Существительное",
+    translate: "Управление / Контроль",
     status: "Актуально",
   },
   {
@@ -2066,6 +2098,18 @@ export const dictionary: IWord[] = [
     word: "Iстiн",
     part_of_speech: "Существительное",
     translate: "Правда / Истина",
+    status: "Актуально",
+  },
+  {
+    word: "Вiола",
+    part_of_speech: "Существительное",
+    translate: "Чудо / Мечта",
+    status: "Актуально",
+  },
+  {
+    word: "Вiнсьет",
+    part_of_speech: "Существительное",
+    translate: "Идея / Задумка",
     status: "Актуально",
   },
   {
