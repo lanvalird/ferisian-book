@@ -11,11 +11,11 @@ export interface IWord {
     | "Наречие"
     | "Неопределённость"
     | "Числительное";
-  variants?: IWord[];
-  gategory?: string;
-  sort?: number;
-  translate: string;
   status: "Актуально" | "Винтаж" | "Не актуально";
+  translate: string;
+  gategory?: string;
+  variants?: IWord[];
+  prioritySort?: number;
 }
 
 export const dictionary: IWord[] = [
@@ -259,7 +259,7 @@ export const dictionary: IWord[] = [
     part_of_speech: "Глагол",
     translate: "Отстань / Отвали / Отвянь",
     status: "Актуально",
-variants: [
+    variants: [
       {
         word: "Асайтö",
         part_of_speech: "Глагол",
@@ -1748,7 +1748,7 @@ variants: [
     word: "Зер",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 0,
+    prioritySort: 0,
     translate: "Ноль / Нуль",
     status: "Актуально",
   },
@@ -1756,7 +1756,7 @@ variants: [
     word: "Ван",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 1,
+    prioritySort: 1,
     translate: "Один",
     status: "Актуально",
   },
@@ -1764,7 +1764,7 @@ variants: [
     word: "Двен",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 2,
+    prioritySort: 2,
     translate: "Два",
     status: "Актуально",
   },
@@ -1772,7 +1772,7 @@ variants: [
     word: "Трiн",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 3,
+    prioritySort: 3,
     translate: "Три",
     status: "Актуально",
   },
@@ -1780,7 +1780,7 @@ variants: [
     word: "Четрн",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 4,
+    prioritySort: 4,
     translate: "Четыре",
     status: "Актуально",
   },
@@ -1788,7 +1788,7 @@ variants: [
     word: "Пять",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 5,
+    prioritySort: 5,
     translate: "Пять",
     status: "Актуально",
   },
@@ -1796,7 +1796,7 @@ variants: [
     word: "Сiксн",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 6,
+    prioritySort: 6,
     translate: "Шесть",
     status: "Актуально",
   },
@@ -1804,7 +1804,7 @@ variants: [
     word: "Семь",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 7,
+    prioritySort: 7,
     translate: "Семь",
     status: "Актуально",
   },
@@ -1812,7 +1812,7 @@ variants: [
     word: "Восiмь",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 8,
+    prioritySort: 8,
     translate: "Восемь",
     status: "Актуально",
   },
@@ -1820,7 +1820,7 @@ variants: [
     word: "Девять",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 9,
+    prioritySort: 9,
     translate: "Девять",
     status: "Актуально",
   },
@@ -1828,7 +1828,7 @@ variants: [
     word: "Несять",
     part_of_speech: "Числительное",
     gategory: "Числа",
-    sort: 10,
+    prioritySort: 10,
     translate: "Десять",
     status: "Актуально",
   },

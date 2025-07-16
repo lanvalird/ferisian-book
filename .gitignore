@@ -4,7 +4,7 @@ dist/
 .astro/
 
 # Me
-.aculaOne
+local.*
 
 # dependencies
 node_modules/

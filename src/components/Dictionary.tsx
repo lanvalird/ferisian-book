@@ -1,30 +1,33 @@
 import { useState } from "react";
 import { dictionary, type IWord } from "../assets/placeholders/dictionary";
+import { replaceSymbolsToFerisian as rs } from "../utils/replaceSymbolsToFerisian";
+
+const i18n = [
+  {
+    lang: "ru",
+    word: "Слово",
+    part_of_speech: "Часть речи",
+    translate: "Перевод и/или значение",
+    gategory: "Категория",
+    variants: "Вариации",
+    status: "Статус",
+    count_words: "Всего базовых слов",
+  },
+  {
+    lang: "fe",
+    word: "Ворд",
+    part_of_speech: "Парт опв Яßато",
+    translate: "Пiрiвод i/iль значiт",
+    gategory: "Катiка",
+    variants: "Варiанты",
+    status: "Статус",
+    count_words: "Ненißе стайкны Ворды",
+  },
+];
 
 export default function Dictionary({ lang }: { lang: string }) {
   if (!lang) lang = "ru";
-  const translate = [
-    {
-      lang: "ru",
-      word: "Слово",
-      part_of_speech: "Часть речи",
-      translate: "Перевод и/или значение",
-      gategory: "Категория",
-      variants: "Вариации",
-      status: "Статус",
-      count_words: "Всего базовых слов",
-    },
-    {
-      lang: "fe",
-      word: "Ворд",
-      part_of_speech: "Парт опв Яßато",
-      translate: "Пiрiвод i/iль значiт",
-      gategory: "Катiка",
-      variants: "Варiанты",
-      status: "Статус",
-      count_words: "Ненißе стайкны Ворды",
-    },
-  ];
+
   const [dictionaryFiltered, setDictionaryFiltered] = useState<IWord[] | []>(
     dictionary
   );
@@ -34,18 +37,6 @@ export default function Dictionary({ lang }: { lang: string }) {
   }>({ filter: "word" });
 
   const find = (v: string) => {
-    const replaceSymbols = (s: string) => {
-      const rs: { symbol: string; replace: string }[] = [
-        { symbol: "ß", replace: "сс" },
-        { symbol: "ш", replace: "сс" },
-        { symbol: "ф", replace: "пв" },
-        { symbol: "и", replace: "i" },
-        { symbol: "ж", replace: "зз" },
-      ];
-
-      rs.forEach((rs) => (s = s.replaceAll(rs.symbol, rs.replace)));
-      return s;
-    };
     v = v.toLocaleLowerCase();
 
     switch (findFilters.filter) {
@@ -53,11 +44,9 @@ export default function Dictionary({ lang }: { lang: string }) {
         setDictionaryFiltered(
           dictionary.filter(
             (w) =>
-              replaceSymbols(w.word.toLocaleLowerCase()).includes(
-                replaceSymbols(v)
-              ) ||
+              rs(w.word.toLocaleLowerCase()).includes(rs(v)) ||
               w.variants?.some((vw) =>
-                replaceSymbols(vw.word.toLocaleLowerCase()).includes(v)
+                rs(vw.word.toLocaleLowerCase()).includes(v)
               )
           )
         );
@@ -67,11 +56,9 @@ export default function Dictionary({ lang }: { lang: string }) {
         setDictionaryFiltered(
           dictionary.filter(
             (w) =>
-              replaceSymbols(w.translate.toLocaleLowerCase()).includes(
-                replaceSymbols(v)
-              ) ||
+              rs(w.translate.toLocaleLowerCase()).includes(rs(v)) ||
               w.variants?.some((vw) =>
-                replaceSymbols(vw.translate.toLocaleLowerCase()).includes(v)
+                rs(vw.translate.toLocaleLowerCase()).includes(v)
               )
           )
         );
@@ -81,13 +68,9 @@ export default function Dictionary({ lang }: { lang: string }) {
         setDictionaryFiltered(
           dictionary.filter(
             (w) =>
-              replaceSymbols(w.gategory?.toLocaleLowerCase() ?? "").includes(
-                replaceSymbols(v)
-              ) ||
+              rs(w.gategory?.toLocaleLowerCase() ?? "").includes(rs(v)) ||
               w.variants?.some((vw) =>
-                replaceSymbols(vw.gategory?.toLocaleLowerCase() ?? "").includes(
-                  v
-                )
+                rs(vw.gategory?.toLocaleLowerCase() ?? "").includes(v)
               )
           )
         );
@@ -109,7 +92,7 @@ export default function Dictionary({ lang }: { lang: string }) {
         <input
           type="text"
           onChange={(el) => find(el.currentTarget.value)}
-          placeholder={translate.find((el) => el.lang === lang)?.word + "…"}
+          placeholder={i18n.find((el) => el.lang === lang)?.word + "…"}
           style={{
             marginRight: "1rem",
 
@@ -136,46 +119,38 @@ export default function Dictionary({ lang }: { lang: string }) {
             width: "100%",
             maxWidth: "12rem",
           }}
-          name={translate.find((el) => el.lang === lang)?.gategory}
+          name={i18n.find((el) => el.lang === lang)?.gategory}
           onChange={(el) => setFindFilters({ filter: el.currentTarget.value })}
         >
           <option value="word">
-            {translate.find((el) => el.lang === lang)?.word}
+            {i18n.find((el) => el.lang === lang)?.word}
           </option>
           <option value="translate">
-            {translate.find((el) => el.lang === lang)?.translate}
+            {i18n.find((el) => el.lang === lang)?.translate}
           </option>
           <option value="gategory">
-            {translate.find((el) => el.lang === lang)?.gategory}
+            {i18n.find((el) => el.lang === lang)?.gategory}
           </option>
         </select>
       </form>
       <p>
-        {translate.find((el) => el.lang === lang)?.count_words}:{" "}
+        {i18n.find((el) => el.lang === lang)?.count_words}:{" "}
         {dictionaryFiltered.length} /{" "}
         {dictionary.flatMap((w) => w.variants).length}
       </p>
       <table>
         <thead>
           <tr>
+            <th scope="col">{i18n.find((el) => el.lang === lang)?.word}</th>
+            <th scope="col">{i18n.find((el) => el.lang === lang)?.gategory}</th>
             <th scope="col">
-              {translate.find((el) => el.lang === lang)?.word}
+              {i18n.find((el) => el.lang === lang)?.part_of_speech}
             </th>
             <th scope="col">
-              {translate.find((el) => el.lang === lang)?.gategory}
+              {i18n.find((el) => el.lang === lang)?.translate}
             </th>
-            <th scope="col">
-              {translate.find((el) => el.lang === lang)?.part_of_speech}
-            </th>
-            <th scope="col">
-              {translate.find((el) => el.lang === lang)?.translate}
-            </th>
-            <th scope="col">
-              {translate.find((el) => el.lang === lang)?.variants}
-            </th>
-            <th scope="col">
-              {translate.find((el) => el.lang === lang)?.status}
-            </th>
+            <th scope="col">{i18n.find((el) => el.lang === lang)?.variants}</th>
+            <th scope="col">{i18n.find((el) => el.lang === lang)?.status}</th>
           </tr>
         </thead>
         <tbody>
@@ -201,11 +176,11 @@ export default function Dictionary({ lang }: { lang: string }) {
               return res;
             })
             .sort((a, b) => {
-              if (!a.sort) return 1;
-              if (!b.sort) return -1;
+              if (!a.prioritySort) return 1;
+              if (!b.prioritySort) return -1;
 
-              if (a.sort > b.sort) return 1;
-              if (a.sort < b.sort) return -1;
+              if (a.prioritySort > b.prioritySort) return 1;
+              if (a.prioritySort < b.prioritySort) return -1;
 
               return 1;
             })
@@ -220,7 +195,7 @@ export default function Dictionary({ lang }: { lang: string }) {
         </tbody>
       </table>
       <p>
-        {translate.find((el) => el.lang === lang)?.count_words}:{" "}
+        {i18n.find((el) => el.lang === lang)?.count_words}:{" "}
         {dictionaryFiltered.length} /
         {dictionary.flatMap((w) => w.variants).length}
       </p>
