@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "ferisian-book",
   "type": "module",
   "version": "0.1.0",
   "scripts": {
@@ -9,17 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.5",
-    "@astrojs/react": "^3.0.10",
-    "@astrojs/starlight": "^0.20.1",
-    "@types/react": "^18.2.58",
-    "@types/react-dom": "^18.2.19",
-    "astro": "^4.4.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sharp": "^0.32.5",
-    "starlight-blog": "^0.11.1",
-    "typescript": "^5.3.3"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^4.3.0",
+    "@astrojs/starlight": "^0.34.7",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "astro": "^5.11.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sharp": "^0.32.6",
+    "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@10.6.0+sha256.71ea235e611e2c8e6043ffca1c278f82089f71dfec4d1e9d01b47825e5e92f89",
   "pnpm": {

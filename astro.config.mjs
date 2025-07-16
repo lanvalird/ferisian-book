@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import starlightBlog from "starlight-blog";
 import react from "@astrojs/react";
 
 // https://astro.build/config
@@ -9,9 +8,19 @@ export default defineConfig({
     starlight({
       title: "Ferisian Book",
       customCss: ["./src/styles/main.css"],
-      social: {
-        // github: 'https://github.com/aculaOne/ferisian_book',
-      },
+
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/lanvalird/ferisian-book",
+        },
+        {
+          icon: "puzzle",
+          label: "Author",
+          href: "https://lanvalird.ru",
+        },
+      ],
       defaultLocale: "ru",
       locales: {
         ru: {
@@ -96,12 +105,6 @@ export default defineConfig({
           },
           badge: { text: "~", variant: "caution" },
         },
-      ],
-
-      plugins: [
-        starlightBlog({
-          title: "Блог",
-        }),
       ],
     }),
     react(),
