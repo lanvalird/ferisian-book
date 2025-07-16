@@ -334,12 +334,12 @@ export const names: IName[] = [
     origin: "Бiреза",
     variants: ["Бiр[iа]", "Зiя", "Резiа", "Резя", "Рiз", "Бiрзiя"],
   },
- {
+  {
     name: "Блюрiс",
     gender: "male",
     origin: "",
     variants: ["Рiз", "Рiс", "Блюр"],
-  }, ,
+  },
   {
     name: "Нiол[iа]",
     gender: "female",
