@@ -9,16 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/react": "^4.3.0",
-    "@astrojs/starlight": "^0.34.7",
-    "@types/react": "^18.3.23",
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/starlight": "^0.34.8",
+    "@types/react": "^18.3.26",
     "@types/react-dom": "^18.3.7",
-    "astro": "^5.11.1",
+    "astro": "^5.15.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sharp": "^0.32.6",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.6.0+sha256.71ea235e611e2c8e6043ffca1c278f82089f71dfec4d1e9d01b47825e5e92f89",
   "pnpm": {

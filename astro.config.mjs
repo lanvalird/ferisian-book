@@ -8,7 +8,6 @@ export default defineConfig({
     starlight({
       title: "Ferisian Book",
       customCss: ["./src/styles/main.css"],
-
       social: [
         {
           icon: "github",

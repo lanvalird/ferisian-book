@@ -43,6 +43,12 @@ export const names: IName[] = [
     variants: ["Скай", "Аiйо"],
   },
   {
+    name: "Рем",
+    gender: "neutral",
+    origin: "(Рем / Рэм)",
+    variants: ["Рiем"],
+  },
+  {
     name: "Люсiк",
     gender: "male",
     origin: "Люсiк",
@@ -53,6 +59,12 @@ export const names: IName[] = [
     gender: "female",
     origin: "Амiгорiа / (Ангелина)",
     variants: ["Мiга", "Голiа", "Лiа", "Мiлiа", "Мiля"],
+  },
+  {
+    name: "Агленiа",
+    gender: "female",
+    origin: "Мiголia",
+    variants: ["Лiга", "Голiа", "Лiа", "Нiа", "Нiлiа", "Лiнiа", "Линя", "Лiля"],
   },
   {
     name: "Вiсел[ia]",
