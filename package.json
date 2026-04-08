@@ -9,18 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
-    "@astrojs/react": "^4.4.2",
-    "@astrojs/starlight": "^0.34.8",
-    "@types/react": "^18.3.26",
+    "@astrojs/check": "^0.9.7",
+    "@astrojs/react": "^5.0.0",
+    "@astrojs/starlight": "^0.37.7",
+    "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
-    "astro": "^5.15.7",
+    "astro": "^5.6.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sharp": "^0.32.6",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.6.0+sha256.71ea235e611e2c8e6043ffca1c278f82089f71dfec4d1e9d01b47825e5e92f89",
+  "packageManager": "pnpm@10.32.0+sha512.9b2634bb3fed5601c33633f2d92593f506270a3963b8c51d2b2d6a828da615ce4e9deebef9614ccebbc13ac8d3c0f9c9ccceb583c69c8578436fa477dbb20d70",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
